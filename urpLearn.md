@@ -30,9 +30,9 @@
 
 在 urp 中相机有两种 Render Type 可选，Base 和 Overlay
 
-![image-20230920093420340](../Typora/local_imgs/image-20230920093420340.png)
+![image-20230920093420340](https://buoutuanzi-picture.oss-cn-guangzhou.aliyuncs.com/tuchuang/image-20230920093420340.png)
 
-![image-20230920093427110](../Typora/local_imgs/image-20230920093427110.png)
+![image-20230920093427110](https://buoutuanzi-picture.oss-cn-guangzhou.aliyuncs.com/tuchuang/image-20230920093427110.png)
 
 + Base Camera：普通的输出相机，会渲染到 render target 上
 + Overlay Camera：会基于其他相机的输出**覆盖**叠加自己的渲染结果，可以把一或多个 Overlay Camera 的输出叠加到 Base Camera 上。无法单独使用，如果不把 Overlay Camera 叠加到一个 Base Camera 上，则这个 Overlay Camera 不会执行渲染
@@ -45,7 +45,7 @@
 
 相机在 Camera Stack 中的 **顺序决定了相机的渲染顺序**，从上到下渲染叠加
 
-![image-20230920095613076](../Typora/local_imgs/image-20230920095613076.png)
+![image-20230920095613076](https://buoutuanzi-picture.oss-cn-guangzhou.aliyuncs.com/tuchuang/image-20230920095613076.png)
 
 此时的画面层级是: Base Camera -> Overlay Camera 2 -> Overlay Camera 1
 
@@ -59,11 +59,11 @@
 
 左半屏
 
-![image-20230920101412759](../Typora/local_imgs/image-20230920101412759.png)
+![image-20230920101412759](https://buoutuanzi-picture.oss-cn-guangzhou.aliyuncs.com/tuchuang/image-20230920101412759.png)
 
 右半屏
 
-![image-20230920101420511](../Typora/local_imgs/image-20230920101420511.png)
+![image-20230920101420511](https://buoutuanzi-picture.oss-cn-guangzhou.aliyuncs.com/tuchuang/image-20230920101420511.png)
 
 + X，Y：从视口坐标的哪里作为左下角开始渲染
 
@@ -91,7 +91,7 @@
 
 RenderFeature 是干嘛的？往 Renderer 中加 Pass 的，因此 RenderFeature 有两个方法
 
-![image-20230920152719669](../Typora/local_imgs/image-20230920152719669.png)
+![image-20230920152719669](https://buoutuanzi-picture.oss-cn-guangzhou.aliyuncs.com/tuchuang/image-20230920152719669.png)
 
 但是要加 Pass 我们首先得有 Pass，所以还需要自定义 RenderPass
 
